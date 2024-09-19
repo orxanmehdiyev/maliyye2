@@ -1,0 +1,350 @@
+                
+* {
+	outline:none !important;
+	-moz-outline: none !important;
+	margin:      0;
+	padding:     0;
+}
+
+body {
+	background: #F7F7F7;
+	margin:      0;
+	padding:    0;
+	border-radius: 10px;
+	font-family: "Helvetica Neue", Roboto, Arial, "Droid Sans", sans-serif;
+	font-size: 13px;
+}
+.container-fluid {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	border-radius: 10px;
+	
+}
+.spadding{
+	padding-left: 10px; padding-right: 10px; padding-top: 2px;
+}
+.higt{
+	min-height: 590px;
+	width: 100%;	
+}
+.row{
+	margin: 0;
+	padding: 0;
+	border-radius: 10px;
+	width: 100%;
+
+}
+.pading{
+	padding-right: 5px;
+	padding-left: 5px;
+}
+a:hover {
+	text-decoration: none;
+}
+
+
+
+/* Header */
+#header {
+	background:#2A3F54; 
+	margin:0px;
+	height: 80px;
+	position: relative;
+	width: 100%;
+	z-index: -7;
+	border-radius: 10px 10px 0px 0px;
+}
+.border{
+	border:1px solid #5E7CB8 !important;
+
+}
+
+/* Menu buradan başlayır */
+#sidebar{ 
+	width:100%;
+	background:#2A3F54; 
+	position: relative;
+	border-radius: 7px;
+	margin: 2px 10px 2px 10px;
+}
+#sidebar > ul{ 
+	margin:0px;
+	padding:0px;
+	width:100%;
+	display:block;
+	z-index:999;
+} 
+#sidebar > ul > li { 
+	list-style-type:none; 
+	float:left;
+	display:block;
+	margin:0px;
+	border-right:1px solid red;
+	position:relative;
+	padding:5px;
+	cursor:pointer;
+	height: 30px;
+	line-height: 18px;
+} 
+#sidebar > ul > li> a{ padding:12px 0;
+}
+#sidebar > ul > li:hover ul { display:block;} 
+#sidebar > ul > li>a:hover  { 
+	background-color:#5E7CB8;
+	border-radius: 10px;
+} 
+#sidebar > ul > li:hover a{ background:none;}
+#sidebar > ul li ul {
+	margin:0px;
+	padding:0px;
+	display:none; 
+	z-index:999;
+	position:absolute;
+	left:4px; 
+	top:28px;
+	background: #E6EFF8;
+	min-width:300px;
+} 
+#sidebar > ul li ul li { 
+	list-style-type:none;
+	margin:0px; 
+	font-size:12px;
+	line-height:25px;
+} 
+#sidebar > ul li ul li a { 
+	display:block;
+	padding:2px 10px; 
+	color:#000000;
+	text-decoration:none;
+	border: 1px solid #5E7CB8;
+} 
+#sidebar > ul li ul li:hover a{
+	background-color: #FFFFFF;
+
+} 
+
+#sidebar > ul li a { 
+	cursor:pointer;
+	color:#fff;
+	font-size:14px; 
+}
+
+/* Menu buradan bitir */
+
+
+
+/*checkbox buradan baslayir*/
+label.checkbox {
+	margin:  0px 10px 0px 10px;
+	vertical-align: middle;
+}
+label.checkbox input{
+	display: none;
+	border: 1px solid #dfdfdf;
+	vertical-align: middle;
+}
+
+label.checkbox .checkbox{	
+	background-color: #fff;
+	border: 1px solid #dfdfdf;
+	border-radius: 20px;
+	cursor: pointer;
+	display: inline-block;
+	height: 28px;
+	position: relative;
+	vertical-align: middle;
+	width: 50px;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	box-sizing: content-box;
+	background-clip: content-box;
+}
+
+label.checkbox .checkbox span{
+	width: 28px;
+	height: 27px;
+	position: absolute;
+	top: 0px;
+	left: 0;
+	background: #fff;
+	border-radius: 50%;
+	box-shadow: 0 1px 5px 0 rgba(0,0,0,.4);
+	transition: 300ms left,background;
+
+}
+label.checkbox input:checked+.checkbox
+{
+	background-color: rgb(38, 185, 154);
+}
+label.checkbox input:checked+.checkbox span
+{	left: 21px;
+	background-color: rgb(255, 255, 255);
+	transition: background-color 0.4s ease 0s, left 0.2s ease 0s;
+}
+
+/*checkbox buradan baslayir*/
+
+
+
+
+
+
+.col-md-55, .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+	position: relative;
+	min-height: 1px;
+	float: left;
+	padding-right: 10px;
+	padding-left: 10px; 
+}
+
+/* Footer */
+
+
+
+
+.table {
+	margin-top: 16px !important;
+	border:0 !important;
+	font-size: 16px;
+
+}
+
+.table, th, td {
+	border: 1px solid black !important;
+
+}
+.table td {
+    padding: 5px 0px 5px 4px !important;
+    margin: 0 !important;
+    vertical-align: middle;
+    border-top: 1px solid #dee2e6;
+}
+.table tbody + tbody {
+	border: 1px solid black !important;
+}
+
+
+/* Footer */
+#footer {
+	text-align: center;
+	color: #FFFFFF;
+	padding:1px 0; 
+	background:#2A3F54;
+	border-radius: 0px 0px 10px 10px;
+	width: 100%;
+	margin-top: 10px;
+}
+
+ label{
+	
+	font-size: 20px;
+}
+
+
+.sag>.sol{
+text-align: left !important;
+}
+
+/*Modal baslayir*/
+.modal-oz {
+    z-index: 3;
+    display: none;
+    padding-top: 126px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    
+}
+.modalicerikkontent {
+
+    margin: auto;
+    background-color: #fff;
+    position: relative;
+    padding: 0;
+    outline: 0;
+    width: 800px;
+    border: 5px solid #2A3F54;
+    border-radius: 5px;
+    
+}
+
+.w3-display-topright {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-weight: bold;
+
+
+}
+
+
+.w3-button {
+    border: none;
+    display: inline-block;
+    padding: 3px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    color: red;
+    text-decoration: underline;
+    text-underline-position: under;
+    
+     
+}
+.modal_baslik{
+ 
+    color:#FFFFFF;
+}
+.modalcontiner{
+    padding-top: 10px;
+    border-top: 30px solid #2A3F54;
+
+}
+
+.modalicerik{
+    margin: 5px;
+}
+
+
+/*Modal bitir*/
+
+
+  input[type=number] {
+        /*for absolutely positioning spinners*/
+        position: relative; 
+        padding: 5px;
+        padding-right: 25px;
+      }
+
+      input[type=number]::-webkit-inner-spin-button,
+      input[type=number]::-webkit-outer-spin-button {
+        opacity: 1;
+      }
+
+      input[type=number]::-webkit-outer-spin-button, 
+      input[type=number]::-webkit-inner-spin-button {
+        -webkit-appearance: inner-spin-button !important;  
+
+        width: 25px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+      }
+
+
+input[type=number] {
+    -moz-appearance:textfield;
+}
