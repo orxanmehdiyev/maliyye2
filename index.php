@@ -1,6 +1,6 @@
 <?php 
 require_once 'panel/header.php';
-/*require_once 'panel/menu.php'*/
+require_once 'panel/menu.php'
 ?>
 <div class="higt">
 	<div class="container-fluid">
